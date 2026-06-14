@@ -1,0 +1,499 @@
+/* 清除默认边距 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* 页面背景 */
+
+body{
+    background:#f3f3f3;
+    font-family:Arial, sans-serif;
+}
+
+/* 导航栏 */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:5px 40px;
+}
+
+/* 左上角Logo */
+
+.logo{
+    width:70px;
+    height:auto;
+}
+
+/* 菜单区域 */
+
+nav{
+    display:flex;
+    gap:120px;
+}
+
+/* 菜单文字 */
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:22px;
+    font-weight:400;
+}
+
+/* 鼠标放上去 */
+
+nav a:hover{
+    color:#777;
+}
+
+
+/* 第一屏 */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    padding:20px 60px;
+}
+
+.hero-left{
+
+    width:40%;
+}
+
+.hero-right{
+
+    width:60%;
+}
+
+.hero-left h1{
+
+    font-size:120px;
+
+    font-weight:400;
+
+    line-height:1;
+}
+
+/* 奥运Logo */
+
+.emblem{
+
+    width:600px;
+
+    display:block;
+
+    margin:auto;
+
+    position:relative;
+
+    left:-300px;
+
+    top:-40px;
+}
+
+/*奥运五环*/
+
+.rings{
+
+    z-index:10;
+    position:relative;
+
+    width:380px;
+
+    display:block;
+
+    margin-top:-158px;
+    margin-left:auto;
+    margin-right:auto;
+
+    position:relative;
+    left:-280px;
+}
+
+/*运动场*/
+
+.stadium{
+
+    z-index:1;
+    position:relative;
+
+    width:1100px;
+    height:230px;
+
+    position:relative;
+
+    top:-220px;
+
+    left:-200px;
+}
+
+/*五色条*/
+
+.color-bar{
+
+    position:absolute;
+
+    right:135px;
+
+    top:84px;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.color-bar div{
+
+    width:100px;
+
+    height:110px;
+}
+
+.blue{
+    background:#0085C7;
+}
+
+.yellow{
+    background:#F4C300;
+}
+
+.black{
+    background:#000000;
+}
+
+.green{
+    background:#009F3D;
+}
+
+.red{
+    background:#DF0024;
+}
+
+/*灰色分割线*/
+
+.intro-section{
+
+    margin-top:-244px;
+
+    padding:0 60px;
+}
+
+/*卡面介绍总标题*/
+
+.intro-title{
+
+    border-top:1px solid #999;
+
+    padding-top:15px;
+
+    font-size:18px;
+
+    font-weight:400;
+
+    color:#555;
+}
+
+/* 底部介绍区域 */
+
+.info-section{
+
+    margin-top:80px;
+
+    border-top:1px solid #888;
+
+    padding:30px 60px 80px;
+}
+
+.section-title{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:50px;
+}
+
+.info-grid{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+}
+
+.info-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    width:25%;
+}
+
+.info-card img{
+
+    width:140px;
+
+    height:180px;
+
+    object-fit:cover;
+}
+
+.card-text h3{
+
+    font-size:24px;
+
+    font-weight:400;
+
+    margin-bottom:15px;
+}
+
+.card-text p{
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    color:#333;
+
+    margin-bottom:25px;
+}
+
+.arrow{
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-left:-110px;
+
+    margin-top:70px;
+}
+
+
+/*logo二级页面*/
+/* ===== 基础重置 ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== Seoul 页面 ===== */
+.seoul-page .main{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:70px 140px 80px;
+}
+
+/* 左侧 */
+.seoul-page .text-area{
+    max-width:680px;
+}
+
+/*  标题 */
+.seoul-page .text-area h1{
+    font-size:80px;         
+    font-weight:500;
+    letter-spacing:-1.5px;
+    margin-bottom:50px;
+}
+
+/* 正文 */
+.seoul-page .text-area p{
+    font-size:18px;         
+    line-height:2;
+    color:#444;
+    margin-bottom:24px;
+}
+
+/* 右侧 */
+.seoul-page .image-area{
+    text-align:center;
+    margin-top:-80px;
+}
+
+/* 图片 */
+.seoul-page .main-logo{
+    width:550px;          
+    margin-bottom:24px;
+}
+
+/*标题和正文位置移动*/
+.seoul-page .text-area{
+    padding-top:100px;  
+}
+
+/* ===== Hodori 页面（共用 seoul-page 作用域） ===== */
+
+.seoul-page .main{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:80px 140px;
+}
+
+/* 左侧文字 */
+.seoul-page .text-area{
+    max-width:700px;
+    margin-top:-50px;
+}
+
+.seoul-page .text-area h1{
+    font-size:96px;
+    font-weight:500;
+    line-height:1.1;
+    letter-spacing:-2px;
+    margin-bottom:40px;
+}
+
+.seoul-page .text-area p{
+    font-size:15px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:18px;
+    max-width:620px;
+}
+
+/* 右侧图片 */
+.seoul-page .image-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* 图片 */
+.seoul-page .main-logo{
+    width:550px;
+    display:block;
+}
+
+/* ===== Posters 页面 ===== */
+
+.seoul-page .main{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:80px 140px;
+}
+
+/* 左侧 */
+.seoul-page .text-area{
+    max-width:700px;
+    margin-top:20px;
+}
+
+.seoul-page .text-area h1{
+    font-size:96px;
+    font-weight:500;
+    line-height:1.1;
+    letter-spacing:-2px;
+    margin-bottom:40px;
+}
+
+.seoul-page .text-area p{
+    font-size:16px;
+    line-height:1.9;
+    color:#444;
+    margin-bottom:20px;
+    max-width:620px;
+}
+
+/* 右侧图片 */
+.seoul-page .image-area{
+    width:600px; 
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+/* 海报*/
+.seoul-page .poster-image{
+    width:520px;
+    margin-top:60px;
+    margin-left:-30px;
+}
+
+/*正文标题往上移动*/
+.seoul-page .text-area{
+    max-width:700px;
+    margin-top:-40px;  
+}
+
+/* ===== Impact 页面 ===== */
+
+.impact-main{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:40px 80px;
+}
+
+/* 左侧视觉 */
+.impact-visual{
+    position:relative;
+    width:60%;
+}
+
+/* 图片 */
+.impact-image{
+    width:100%;
+    display:block;
+    aspect-ratio:4/3;   
+    object-fit:cover;
+    margin-top:-40px;
+}
+
+/* ✅ 覆盖大标题 */
+.impact-title{
+    position:absolute;
+    top:80px;
+    left:40px;
+
+    font-size:110px;
+    font-weight:400;
+    line-height:1.1;
+    letter-spacing:-2px;
+
+    color:#000;
+}
+
+/* 右侧文字 */
+.impact-text{
+    width:38%;
+    margin-top:100px;
+}
+
+/* 段落 */
+.impact-text p{
+    font-size:14px;
+    line-height:1.8;
+    color:#333;
+    margin-bottom:20px;
+}
+
+/* 小标题 */
+.impact-text strong{
+    font-size:16px;
+}
+
+
+
+
