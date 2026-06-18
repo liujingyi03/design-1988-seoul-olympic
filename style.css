@@ -322,6 +322,7 @@ nav a:hover{
     line-height:2;
     color:#444;
     margin-bottom:24px;
+    word-break:keep-all;
 }
 
 /* 右侧 */
@@ -414,6 +415,8 @@ nav a:hover{
     color:#444;
     margin-bottom:20px;
     max-width:620px;
+    word-break: keep-all;
+
 }
 
 /* 右侧图片 */
