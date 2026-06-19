@@ -151,6 +151,7 @@ nav a:hover{
     display:flex;
 
     flex-direction:column;
+    z-index:999;
 }
 
 .color-bar div{
